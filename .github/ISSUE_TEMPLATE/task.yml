@@ -1,0 +1,22 @@
+name: Task
+description: Platform or infrastructure task
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What needs to be done and which files or areas are affected?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know this task is done?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Issues or PRs that must be merged first (optional)
